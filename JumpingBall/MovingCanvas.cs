@@ -5,11 +5,13 @@ using System.Text;
 
 using Android.App;
 using Android.Content;
+using Android.Graphics;
 using Android.OS;
 using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using static Android.Graphics.Paint;
 
 namespace JumpingBall
 {
@@ -40,8 +42,21 @@ namespace JumpingBall
 
         protected override void OnMeasure (int w, int h)
         {
-            base.OnMeasure
+            base.OnMeasure(w, h);
+            this.SetMeasuredDimension(MeasureSpec.GetSize(w), MeasureSpec.GetSize(h));
+            this.B = new MovingPicture(Height / 2, 10);
         }
 
+        protected override void OnDraw(Canvas canvas)
+        {
+            this.SetBackgroundColor(Color.White);
+            Paint p = new Paint();
+            canvas.DrawBitmap(BitmapFactory.DecodeResource(c.Resources, Resource.Drawable.ball), Width / 2, B.Y, p);
+            FontMetrics fm = p.GetFontMetrics();
+            p.Color = Color.Black;
+            p.StrokeWidth = 2;
+            p.TextSize = 24;
+            canvas.DrawText(b.NrJump + " jumps", 10, Height / 2 - (fm.Ascent + fm.Descent) / 2, p);
+        }
     }
 }
