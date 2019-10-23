@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/relativeLayout1">
+  <TextView
+      p1:text="HEADER"
+      p1:layout_width="match_parent"
+      p1:layout_height="wrap_content"
+      p1:id="@+id/textView1"
+      style="@style/textview_uniform"
+      p1:padding="40dp"
+      p1:layout_alignParentStart="true"
+      p1:layout_alignParentEnd="true" />
+  <TextView
+      p1:text="Text"
+      p1:layout_width="160dp"
+      p1:layout_height="wrap_content"
+      p1:layout_below="@id/textView1"
+      p1:id="@+id/textView2"
+      style="@style/textview_uniform"
+      p1:layout_marginRight="10dp"
+      p1:layout_toLeftOf="@id/textView3"
+      p1:layout_alignParentStart="true" />
+  <TextView
+      p1:text="Text"
+      p1:layout_width="wrap_content"
+      p1:layout_height="wrap_content"
+      p1:layout_below="@id/textView1"
+      p1:id="@+id/textView3"
+      style="@style/textview_uniform"
+      p1:layout_marginRight="10dp"
+      p1:layout_centerInParent="true" />
+  <TextView
+      p1:text="Text"
+      p1:layout_width="160dp"
+      p1:layout_height="wrap_content"
+      p1:layout_below="@id/textView1"
+      p1:layout_toRightOf="@id/textView3"
+      p1:id="@+id/textView4"
+      style="@style/textview_uniform"
+      p1:layout_alignParentEnd="true" />
+  <TextView
+      p1:text="Text"
+      p1:layout_width="100dp"
+      p1:layout_height="wrap_content"
+      p1:layout_below="@id/textView2"
+      p1:id="@+id/textView5"
+      style="@style/textview_uniform" />
+  <TextView
+      p1:text="Text"
+      p1:layout_width="100dp"
+      p1:layout_height="wrap_content"
+      p1:layout_below="@id/textView2"
+      p1:id="@+id/textView6"
+      style="@style/textview_uniform"
+      p1:layout_alignRight="@id/textView4" />
+  <TextView
+      p1:text="Text"
+      p1:layout_width="wrap_content"
+      p1:layout_height="120dp"
+      p1:layout_below="@id/textView6"
+      p1:id="@+id/textView7"
+      style="@style/textview_uniform"
+      p1:layout_marginTop="40dp"
+      p1:layout_centerInParent="true"
+      p1:layout_marginLeft="10dp"
+      p1:layout_marginRight="10dp"
+      p1:layout_alignParentEnd="true"
+      p1:layout_alignParentStart="true" />
+  <TextView
+      p1:text="FOOTER"
+      p1:layout_width="fill_parent"
+      p1:layout_height="wrap_content"
+      p1:id="@+id/textView8"
+      style="@style/textview_uniform"
+      p1:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox1" />
+    <RadioButton
+        android:text="RadioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton1" />
+    <RadioGroup
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup1">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="English"
+            android:id="@+id/radioButton2" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="French"
+            android:id="@+id/radioButton3" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Swedish"
+            android:id="@+id/radioButton4" />
+    </RadioGroup>
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch1" />
+    <Button
+        android:text="Off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1" />
+    <TextView
+        android:text="Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:textSize="30dp" />
+</LinearLayout>

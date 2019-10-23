@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner1"
+            android:entries="@array/seven_dwarves" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:text="Text"
+            android:layout_height="fill_parent"
+            android:id="@+id/textView1"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:textSize="30dp"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_green_dark" />
+        <Button
+            android:text="Button"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/button1"
+            android:background="@android:color/holo_purple"
+            android:layout_weight="10"
+            android:textAlignment="textEnd"
+            android:textAllCaps="true"
+            android:textSize="50dp"
+            android:typeface="monospace"
+            android:textColor="@android:color/holo_red_dark"
+            android:paddingRight="10dp"
+            android:gravity="bottom" />
+    </LinearLayout>
+</LinearLayout>

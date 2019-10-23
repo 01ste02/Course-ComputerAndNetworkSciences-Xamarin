@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="movieNames">
+    <item>Gladiator</item>
+    <item>Shakespear In Love</item>
+    <item>English Patient</item>
+    <item>Forrest Gump</item>
+    <item>Dances of Wolves</item>
+    <item>Rain Man</item>
+    <item>Ghandi</item>
+    <item>The Deer Hunter</item>
+    <item>Platoon</item>
+    <item>Schindlers List</item>
+    <item>The Godfather</item>
+    <item>One Flew Over The Cuckoos Nest</item>
+    <item>Casablanca</item>
+    <item>Gone With The Wind</item>
+    <item>From Here To Eternity</item>
+    <item>Kramer Vs. Kramer</item>
+  </string-array>
+</resources>
