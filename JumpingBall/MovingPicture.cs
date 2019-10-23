@@ -12,34 +12,49 @@ using Android.Widget;
 
 namespace JumpingBall
 {
-    class MovingPicture
+    public class MovingPicture
     {
-        int y, vy, nrJump;
+        int y, vy, x, vx, nrJumpY, nrJumpX;
         public int Y { get => y; set => y = value; }
         public int Vy { get => vy; set => vy = value; }
-        public int NrJump { get => nrJump; set => nrJump = value; }
+        public int X { get => x; set => x = value; }
+        public int Vx { get => vx; set => vx = value; }
+        public int NrJumpY { get => nrJumpY; set => nrJumpY = value; }
+        public int NrJumpX { get => nrJumpX; set => nrJumpX = value; }
 
-        public MovingPicture (int y, int vy)
+        public MovingPicture (int y, int vy, int x, int vx)
         {
             Y = y;
             Vy = vy;
+            X = x;
+            Vx = vx;
         }
 
-        public void Update (int height)
+        public void Update (int height, int width)
         {
             if (y < 0)
             {
-                nrJump++;
+                nrJumpY++;
                 vy = -vy;
             }
-            else if (y > height)
+
+            if (y > (height - 80))
             {
                 vy = -vy;
             }
-            else
-            {
                 y += vy;
+
+            if (x < 0)
+            {
+                nrJumpX++;
+                vx = -vx;
             }
+
+            if (x > (width - 80))
+            {
+                vx = -vx;
+            }
+                x += vx;
         }
     }
 }

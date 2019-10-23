@@ -32,9 +32,9 @@ namespace JumpingBall
 
             public void Run()
             {
-                m.mc.B.Update(m.mc.Height);
+                m.mc.B.Update(m.mc.Height, m.mc.Width);
                 m.mc.Invalidate();
-                m.h.PostDelayed(new UpdateTask(m), 1000);
+                m.h.PostDelayed(new UpdateTask(m), 1);
             }
         }
     }
